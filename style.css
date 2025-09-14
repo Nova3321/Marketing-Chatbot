@@ -1,0 +1,127 @@
+
+<style>
+    /* Police moderne */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    * {
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* En-tête */
+    .header {
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        padding: 1.5rem;
+        border-radius: 0 0 15px 15px;
+        color: white;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+    }
+
+    /* Cartes */
+    .card {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-left: 4px solid #6a11cb;
+    }
+
+    /* Boutons */
+    .stButton>button {
+        border-radius: 8px;
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .stButton>button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(106, 17, 203, 0.3);
+    }
+
+    /* Zone de chat */
+    .chat-container {
+        background-color: #f8f9fa;
+        border-radius: 15px;
+        padding: 1.5rem;
+        height: 65vh;
+        overflow-y: auto;
+    }
+
+    .user-message {
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        color: white;
+        border-radius: 18px 18px 0 18px;
+        padding: 12px 16px;
+        margin: 8px 0;
+        max-width: 80%;
+        margin-left: auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .bot-message {
+        background-color: white;
+        color: #333;
+        border-radius: 18px 18px 18px 0;
+        padding: 12px 16px;
+        margin: 8px 0;
+        max-width: 80%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border: 1px solid #e9ecef;
+    }
+
+    /* Sidebar */
+    .css-1d391kg {
+        background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+        border-right: 1px solid #e9ecef;
+    }
+
+    /* Input */
+    .stTextInput>div>div>input {
+        border-radius: 20px;
+        border: 1px solid #e9ecef;
+        padding: 0.75rem;
+    }
+
+    /* Métriques */
+    .metric-card {
+        background: white;
+        border-radius: 12px;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border: 1px solid #e9ecef;
+    }
+
+    .metric-value {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #6a11cb;
+        margin: 0.5rem 0;
+    }
+
+    .metric-label {
+        font-size: 0.9rem;
+        color: #6c757d;
+        font-weight: 500;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+        animation: fadeIn 0.5s ease forwards;
+    }
+
+    /* Progress bar */
+    .stProgress > div > div > div {
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    }
+</style>
