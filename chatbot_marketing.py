@@ -161,8 +161,9 @@ def main():
         .stTitle {
             font-size:36px;
             font-weight:bold;
-            color:#1f2937;
+            color:black;  /* texte en noir */
         }
+
 
         .stChatMessage {
             border-radius:12px;
@@ -208,7 +209,8 @@ def main():
         </style>
     """, unsafe_allow_html=True)
 
-    st.title("🎓 Marketing Educational Assistant")
+    st.markdown("<h1 style='color:black;'>🎓 Marketing Educational Assistant</h1>", unsafe_allow_html=True)
+
     st.caption("Ask me any question about marketing. I'll answer from the knowledge base (base.txt).")
 
     # Charger base.txt
