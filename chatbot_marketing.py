@@ -11,17 +11,29 @@ import re
 import random
 import os
 import nltk
+import os
 
-# Forcer le téléchargement à chaque run
+# Créer un répertoire pour les données NLTK dans le dossier de travail
+nltk_data_dir = os.path.join(os.getcwd(), 'nltk_data')
+os.makedirs(nltk_data_dir, exist_ok=True)
+nltk.data.path.append(nltk_data_dir)
+
+# Télécharger les ressources nécessaires
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
-    nltk.download('punkt', quiet=True)
+    nltk.download('punkt', download_dir=nltk_data_dir, quiet=True)
 
 try:
     nltk.data.find('corpora/stopwords')
 except LookupError:
-    nltk.download('stopwords', quiet=True)
+    nltk.download('stopwords', download_dir=nltk_data_dir, quiet=True)
+
+# Télécharger les modèles supplémentaires nécessaires pour le français
+try:
+    nltk.data.find('tokenizers/punkt_tab')
+except LookupError:
+    nltk.download('punkt_tab', download_dir=nltk_data_dir, quiet=True)
 # -----------------------
 # Téléchargement NLTK si besoin
 # -----------------------
