@@ -10,7 +10,8 @@ import string
 import re
 import random
 import os
-
+nltk.download('punkt', quiet=True)
+nltk.download('stopwords', quiet=True)
 # -----------------------
 # Téléchargement NLTK si besoin
 # -----------------------
